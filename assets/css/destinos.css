@@ -1,0 +1,148 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.jumbotron{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container1 {
+  padding: 150px;
+  background: #d9d8d6;
+}
+
+.searchbar{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.nav{
+  background: #24272a;
+  overflow: hidden;
+  width: 100%;
+}
+.nav .menu_main{
+  list-style: none;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.nav .menu_main>li{
+  padding: 1em;
+  width: 8%;
+  float: left;
+  justify-content: space-around;
+}
+
+
+.nav .menu_main>li>a{
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.nav .menu_main>li:hover, .nav .menu_main>li>.sub_menu>li>:hover{
+  background: #ee1c3a;
+  cursor: pointer;
+}
+
+.nav .menu_main>li>.sub_menu{
+  position: absolute;
+  background: #e4e3e1;
+  width: 16%;
+  list-style: none;
+  margin-top: 1em;
+  display: none;
+}
+
+.nav .menu_main>li:hover>.sub_menu{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.nav .menu_main>li>.sub_menu>li{
+  padding: 1em;
+}
+
+.nav .menu_main>li>.sub_menu>li>a{
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+
+#content {
+  width: 100%;
+  margin: 0px auto;
+  display: flex;
+  wrap : wrap;
+}
+
+#column-left {
+  background-color: #EBE9EA;
+  border: 1px solid #D2D2D2;
+  border-radius: 8px 8px 8px 8px;
+  float: left;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  overflow: hidden;
+  width: 20%;
+  height: auto;
+}
+
+#central {
+  background-color: #EBE9EA;
+  border: 1px solid #D2D2D2;
+  border-radius: 8px 8px 8px 8px;
+  float: right;
+  height: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 80%;
+}
+
+
+.card{
+ display:flex;
+  align-items: center;
+  overflow:hidden;
+  background-color:white;
+  //padding:15px;
+  margin: 15px;
+  grid-template-columns: 300px 200px 200px;
+}
+    .card-content{
+      display:flex;
+      flex-direction:column;
+      align-items:flex-start;
+       flex: 1 1 auto;
+       margin: 5px;
+
+
+      h3,p{
+        max-width: calc(100% - 30px);
+        padding-left:30px;
+      }
+
+.card-image>a>img{
+  display: flex;
+ max-width: 100%;
+ height: auto;
+}
+
+.card-content>button{
+  margin-left: 85%;
+  margin-top: 10%;
+}
